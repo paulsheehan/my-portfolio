@@ -8,175 +8,31 @@
 
   <% include ../partials/nav.ejs %>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/static/images/me_thumbnail.png">
-    </a>
-    <h2> Paul Sheehan - Software Developer </h2>
-    <p> BSc Computer Science </p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Github </a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> LinkedIn </a>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> HackerRank </a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Twitter </a>
-
-  </div>
-</div>
+  <section class="jumbotron-section">
+    <% include ../partials/sections/jumbotron_section.ejs %>
+  </section>
 
 <div class="container">
 
-  <div class="skills-section text-center">
+  <section class="skills-section text-center content-section">
+    <% include ../partials/sections/skills_section.ejs %>
+  </section>
 
-    <div class="row">
-      <h3 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> Skills </h3>
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
+  <section class="project-section content-section">
+    <% include ../partials/sections/projects_section.ejs %>
+  </section> <!-- row -->
 
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-    </div> <!-- row -->
+  <section class="personal-life-section content-section">
+    <% include ../partials/sections/personal_life_section.ejs %>
+  </section> <!-- row -->
 
-    <div class="row">
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
+  <section class="instagram-page-section content-section">
+    <% include ../partials/sections/instagram_page_section.ejs %>
+  </section> <!-- row -->
 
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
-
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-    </div> <!-- row -->
-
-    <div class="row">
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
-
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-      <div class="col-md-6">
-        <dl>
-          <dt> Strong Knowledge of Databases</dt>
-
-          <dd> PostGres </dd>
-          <dd> MySQL </dd>
-          <dd> MongoDB </dd>
-        </dl>
-      </div>
-    </div> <!-- row -->
-
-  </div>
-
-  <div class="row">
-    <h3 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> Project </h3>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-  <div class="row">
-    <h3 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> Personal Life </h3>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-  <div class="row">
-    <h3 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> Instagram Page </h3>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-  <div class="row">
-    <h3 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> Contact Me </h3>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-    </div>
+  <section class="contact-me-section content-section">
+    <% include ../partials/sections/contact_me_section.ejs %>
+  </section> <!-- row -->
 </div>
 
 
