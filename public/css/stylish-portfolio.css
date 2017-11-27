@@ -18,7 +18,8 @@ body {
 .text-vertical-center {
   display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
+  padding-bottom: 20px;
 }
 
 .text-vertical-center h1 {
@@ -26,6 +27,10 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  color: white;
+}
+.text-vertical-center h3 {
+  color: black;
 }
 
 
@@ -157,13 +162,16 @@ hr.small {
   display: table;
   width: 100%;
   height: 100%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
+  background: url(../img/me-hands-purp.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+.info-card {
+  top: 100px;
+}
 
 /* About */
 
@@ -176,6 +184,7 @@ hr.small {
 
 .services {
   padding: 50px 0;
+  background-color: #663399;
 }
 
 .service-item {
@@ -228,6 +237,9 @@ hr.small {
   margin: 10px;
 }
 
+.contact {
+  background-color: #663399;
+}
 
 /* Map */
 
@@ -263,10 +275,32 @@ footer {
 
 input[type="text"] {
   border: 1px solid #ddd;
-  padding: 6px;
+  padding: 4px;
   font-size: 18px;
   width: 250px;
   height: 40px;
   top: 30px;
   left: 130px;
+}
+
+.fa-envelope-o {
+  color: #663399;
+}
+.fa-lock {
+  color: #663399;
+}
+.fa-flask {
+  color: #663399;
+}
+.fa-gamepad {
+  color: #663399;
+}
+.fa-facebook {
+  color: black;
+}
+.fa-twitter {
+  color: black;
+}
+.fa-linkedin {
+  color: black;
 }
