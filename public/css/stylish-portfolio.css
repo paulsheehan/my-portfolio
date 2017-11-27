@@ -210,6 +210,7 @@ hr.small {
 
 .img-portfolio {
   margin: 0 auto;
+  border: solid black 2px;
 }
 
 .img-portfolio:hover {
@@ -258,4 +259,14 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+
+input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  top: 30px;
+  left: 130px;
 }
