@@ -179,6 +179,21 @@ hr.small {
   padding: 50px 0;
 }
 
+.skill-item {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.skill-item li{
+  display: block;
+  text-align: center;
+}
+
+.skill-item .fa {
+  color: #663399;
+}
+
+
 
 /* Services */
 
@@ -296,11 +311,11 @@ input[type="text"] {
   color: #663399;
 }
 .fa-facebook {
-  color: black;
+  color: white;
 }
 .fa-twitter {
-  color: black;
+  color: white;
 }
 .fa-linkedin {
-  color: black;
+  color: white;
 }
