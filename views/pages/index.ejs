@@ -1,40 +1,269 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <% include ../partials/header.ejs %>
-</head>
+<html lang="en">
 
-<body>
+  <head>
 
-  <% include ../partials/nav.ejs %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <section class="jumbotron-section">
-    <% include ../partials/sections/jumbotron_section.ejs %>
-  </section>
+    <title>Paul Sheehan - Portfolio</title>
 
-<div class="container">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <section class="skills-section text-center content-section">
-    <% include ../partials/sections/skills_section.ejs %>
-  </section>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <section class="project-section content-section">
-    <% include ../partials/sections/projects_section.ejs %>
-  </section> <!-- row -->
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-  <section class="personal-life-section content-section">
-    <% include ../partials/sections/personal_life_section.ejs %>
-  </section> <!-- row -->
+  </head>
 
-  <section class="instagram-page-section content-section">
-    <% include ../partials/sections/instagram_page_section.ejs %>
-  </section> <!-- row -->
+  <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#top">Start Bootstrap</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#top">Home</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  <section class="contact-me-section content-section">
-    <% include ../partials/sections/contact_me_section.ejs %>
-  </section> <!-- row -->
-</div>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>Paul Sheehan</h1>
+        <h3>Software Developer</h3>
+        <h3> <strong> BSc Computer Science </strong> </h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Contact Me</a>
+      </div>
+    </header>
 
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+        <p class="lead">This theme features some wonderful photography courtesy of
+          <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+      </div>
+      <!-- /.container -->
+    </section>
 
-</body>
+    <!-- Services -->
+    <section id="services" class="services bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>Projects</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Alpha Dolphins</strong>
+                  </h4>
+                  <p>Java email client <br> (Group project)</p>
+                  <a href="#" class="btn btn-light">View Code</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>128-bit RSA</strong>
+                  </h4>
+                  <p>JSP webapp that encrypts a string using RSA</p>
+                  <a href="#" class="btn btn-light">View Code</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Deep Speech</strong>
+                  </h4>
+                  <p>Python vocal analytics <br> (Data science project) </p>
+                  <a href="#" class="btn btn-light">View Code</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Tx_Rogue</strong>
+                  </h4>
+                  <p> GamesFleadh 2015 submission <br> (Group project)</p>
+                  <a href="#" class="btn btn-light">View Code</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>Vertically Centered Text</h1>
+      </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>Our Work</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#">
+                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+            <a href="#" class="btn btn-dark">View More Items</a>
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>The buttons below are impossible to resist.</h3>
+        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Start Bootstrap</strong>
+            </h4>
+            <p>3481 Melrose Place
+              <br>Beverly Hills, CA 90210</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (123) 456-7890</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">name@example.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Your Website 2017</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+  </body>
+
 </html>
